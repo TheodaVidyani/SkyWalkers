@@ -223,14 +223,17 @@ input[type=submit]:hover {
         <textarea id="subject" name="subject"  style="height:200px"></textarea>
       </div>
     </div>
-    <div class="row">
+        <div class="row">
       <div class="col-25">
-        <label for="pemail">Image</label>
+        <label for="subject">Image</label>
       </div>
-      <div class="col-75"><div class="row">
-        <input type="text" id="pemail" name="pemail" >
-      </div>
-    </div>
+      <div class="col-75">
+        <form action="/action_page.php">
+          <input type="file" id="myFile" name="filename">
+          
+        </form>
+        </div>
+  </div>
 
 
     <div class="row">
