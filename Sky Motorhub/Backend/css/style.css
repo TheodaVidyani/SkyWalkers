@@ -276,10 +276,12 @@
     border-color: var(--primary);
 }
 
+/*** Table Currency Type ***/
 .currsign:before {content:'Rs.';
     padding-right:10px;
 }
 
+/*** Table Data Color ***/
 td.approved {
     color:#0a8f51
 }
