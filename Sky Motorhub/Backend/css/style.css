@@ -275,3 +275,19 @@
     background: var(--dark);
     border-color: var(--primary);
 }
+
+.currsign:before {content:'Rs.';
+    padding-right:10px;
+}
+
+td.approved {
+    color:#0a8f51
+}
+
+td.pending {
+    color:#ff9100
+}
+
+td.rejected {
+    color:#ff0000
+}
