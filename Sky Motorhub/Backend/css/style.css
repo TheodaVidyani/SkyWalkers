@@ -293,3 +293,8 @@ td.pending {
 td.rejected {
     color:#ff0000
 }
+
+/*** Table TP-Countrycode ***/
+.tp-countrycode:before {content:'+94 - ';
+}
+
