@@ -1,9 +1,10 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Roster</title>
+    <title>DASHMIN - Bootstrap Admin Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -45,7 +46,7 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
-                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                <a href="index.php" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i class="fa fa-car"></i>DASHBOARD</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
@@ -59,28 +60,28 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link"><i class="fas fa-home"></i>Dashboard</a>
+                    <a href="index.php" class="nav-item nav-link"><i class="fas fa-home"></i>Dashboard</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-car"></i>Vehicle Management</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="inquiries.html" class="dropdown-item">Vehicle Inquiries </a>
-                            <a href="sales.html" class="dropdown-item">Vehicle Sales </a>
-                            <a href="vehicle display.html" class="dropdown-item">Vehicle Display </a>
+                            <a href="inquiries.php" class="dropdown-item">Vehicle Inquiries </a>
+                            <a href="sales.php" class="dropdown-item">Vehicle Sales </a>
+                            <a href="vehicle display.php" class="dropdown-item">Vehicle Display </a>
                         </div>
                     </div>
-                    <a href="exchange.html" class="nav-item nav-link"><i class="fa fa-handshake"></i>Vehicle Exchange</a>
-                    <a href="maintain.html" class="nav-item nav-link"><i class="fa fa-wrench"></i>Vehicle Maintenance</a>
+                    <a href="exchange.php" class="nav-item nav-link"><i class="fa fa-handshake"></i>Vehicle Exchange</a>
+                    <a href="maintain.php" class="nav-item nav-link"><i class="fa fa-wrench"></i>Vehicle Maintenance</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="fas fa-users"></i>Staff Management</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-users"></i>Staff Management</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="payment.html" class="dropdown-item"> Payments </a>
-                            <a href="roster.html" class="dropdown-item"> Roster </a>
+                            <a href="payment.php" class="dropdown-item"> Payments </a>
+                            <a href="roster.php" class="dropdown-item"> Roster </a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-file-alt me-2"></i>Reports</a>
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="fas fa-file-alt me-2"></i>Reports</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="income statement.html" class="dropdown-item">Income Statement</a>
+                            <a href="income statement.php" class="dropdown-item">Income Statement</a>
                             <a href="#" class="dropdown-item">Statement Of Financial Position</a>
                             <a href="#" class="dropdown-item">Cash Flow Statement</a>
                         </div>
@@ -95,7 +96,7 @@
         <div class="content">
             <!-- Navbar Start -->
             <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
-                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+                <a href="index.php" class="navbar-brand d-flex d-lg-none me-4">
                     <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
                 </a>
                 <a href="#" class="sidebar-toggler flex-shrink-0">
@@ -147,7 +148,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <i class="fa fa-bell me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Notification</span>
+                            <span class="d-none d-lg-inline-flex">Notificatin</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">
@@ -184,65 +185,17 @@
             <!-- Navbar End -->
 
 
-          
-
-
-            <!-- Roster display Start -->
+            <!-- Other Elements Start -->
             <div class="container-fluid pt-4 px-4">
-                <div class="bg-light text-center rounded p-4">
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Weekly Roster</h6>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table text-start align-middle table-bordered table-hover mb-0">
-                            <thead>
-                                <tr class="text-dark">
-                                    <th scope="col">Monday</th>
-                                    <th scope="col">Tuesday</th>
-                                    <th scope="col">Wednesday</th>
-                                    <th scope="col">Thursday</th>
-                                    <th scope="col">Friday</th>
-                                    <th scope="col">Saturday</th>
-                                    <th scope="col">Sunday</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Amal</td>
-                                    <td>Kamal</td>
-                                    <td>Amal</td>
-                                    <td>Kamal</td>
-                                    <td>Amal</td>
-                                    <td>Kamal</td>
-                                    <td>Closed</td>
-                                </tr>
-                                <tr>
-                                    <td>Amal</td>
-                                    <td>Kamal</td>
-                                    <td>Amal</td>
-                                    <td>Kamal</td>
-                                    <td>Amal</td>
-                                    <td>Kamal</td>
-                                    <td>Closed</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="row g-4">
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-light rounded h-100 p-4">
+                            <!--content here-->
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Vehicle display Sales End -->
-
-            <!-- Widgets Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="h-100 bg-light rounded p-4">
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Calender</h6>
-                        <a href="">Show All</a>
-                    </div>
-                    <div id="calender"></div>
-                </div>
-            </div>
-            <!-- Widgets End -->
+            <!-- Other Elements End -->
 
 
             <!-- Footer Start -->
@@ -250,11 +203,11 @@
                 <div class="bg-light rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">SkyMotorhub.lk</a>, All Right Reserved. 
+                            &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
-                            Designed By <a href="#">Team SkyWalkers</a>
-                        </div></div>
+                             Designed By <a href="#">HTML Codex</a>
+                        </div>
                     </div>
                 </div>
             </div>
