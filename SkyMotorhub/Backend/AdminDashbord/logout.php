@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Payment</title>
+    <title>Log Out</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -188,51 +188,17 @@
           
 
 
-            <!-- Roster display Start -->
+            <!-- Log Out Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-light text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <h6 class="mb-0">Payment Summary</h6>
                     </div>
-                    <div class="table-responsive">
-                        <table class="table text-start align-middle table-bordered table-hover mb-0">
-                            <thead>
-                                <tr class="text-dark">
-                                    <th scope="col">Employee Number</th>
-                                    <th scope="col">Employee Name</th>
-                                    <th scope="col">Date Joined</th>
-                                    <th scope="col">Basic Salary</th>
-                                    <th scope="col">Allowence</th>
-                                    <th scope="col">Net Salary</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>001</td>
-                                    <td>Kamal Dissanayake</td>
-                                    <td>01 Jan 2020</td>
-                                    <td>20000</td>
-                                    <td>5000</td>
-                                    <td>25000</td>
-                                </tr>
-                                <tr>
-                                    <td>002</td>
-                                    <td>Aamal Rathnayake</td>
-                                    <td>01 Jan 2021</td>
-                                    <td>20000</td>
-                                    <td>5000</td>
-                                    <td>25000</td>
-                                </tr>
-                                <th colspan="3">Total</th>
-                                    <th>40000</th>
-                                    <th>10000</th>
-                                    <th>50000</th>
-                            </tbody>
-                        </table>
+                   
                     </div>
                 </div>
             </div>
-            <!-- Vehicle display Sales End -->
+            <!-- Log Out End -->
 
             <!-- Widgets Start -->
             <div class="container-fluid pt-4 px-4">
