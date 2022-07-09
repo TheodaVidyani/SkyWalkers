@@ -177,31 +177,25 @@
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="myprofile.php" class="dropdown-item">My Profile</a>
                             <a href="#" class="dropdown-item">Settings</a>
-                            <a href="logout.php" class="dropdown-item">Log Out</a>
+                            <a href="signin.php" class="dropdown-item">Log Out</a>
                         </div>
                     </div>
                 </div>
             </nav>
             <!-- Navbar End -->
-
-
-          
-
-
-            <!-- My profile Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="bg-light text-center rounded p-4">
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Payment Summary</h6>
+<!-- Sales Chart Start -->
+<div class="container-fluid pt-4 px-4">
+                <div class="h-100 bg-light rounded p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-4"> <h6 class="mb-0">Salse & Revenue</h6>
+                                <a href="">Show All</a>
                     </div>
-                        
-                    </div>
+                        <canvas id="worldwide-sales"></canvas>
                 </div>
             </div>
-            <!-- My profile End -->
-
-            <!-- Widgets Start -->
-            <div class="container-fluid pt-4 px-4">
+                
+    <!-- Sales Chart End -->
+             <!-- Widgets Start -->
+             <div class="container-fluid pt-4 px-4">
                 <div class="h-100 bg-light rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <h6 class="mb-0">Calender</h6>
@@ -211,8 +205,6 @@
                 </div>
             </div>
             <!-- Widgets End -->
-
-
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-light rounded-top p-4">
@@ -222,7 +214,8 @@
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                             Designed By <a href="#">Team SkyWalkers</a>
-                        </div></div>
+                        </br>
+                       </div>
                     </div>
                 </div>
             </div>

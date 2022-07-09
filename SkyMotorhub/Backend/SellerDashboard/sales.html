@@ -1,9 +1,11 @@
+<?php
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Dashboard</title>
+    <title>Vehicle Exchange</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -29,13 +31,6 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="source/bootstrap-3.3.6-dist/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="source/font-awesome-4.5.0/css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="style/slider.css">
-	<link rel="stylesheet" type="text/css" href="style/mystyle.css">
-	<link rel="stylesheet" type="text/css" href="style/contactstyle.css">
-    <link rel="stylesheet" type="text/css" href="css/postadd.css">
 </head>
 
 <body>
@@ -64,10 +59,10 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="#" class="nav-item nav-link active"><i class="fas fa-home"></i>Dashboard</a>
+                    <a href="index.html" class="nav-item nav-link "><i class="fas fa-home"></i>Dashboard</a>
                     <div class="nav-item dropdown">
                         <a href="PostAd.html" class="nav-item nav-link"><i class="fa fa-car"></i>Post a Vehicle</a>
-                        <a href="sales.html" class="nav-item nav-link"><i class="fa fa-store"></i>Recent Vehicles</a>
+                        <a href="sales.html" class="nav-item nav-link active"><i class="fa fa-store"></i>Recent Vehicles</a>
                         <a href="sales.html" class="nav-item nav-link"><i class="fas fa-wallet"></i>Payments </a>
                    </div>
                 </div>
@@ -88,28 +83,76 @@
                 </div>
             </nav>
             <!-- Navbar End -->
-            <!-- Sales Chart Start -->
+
+            
+            <!--Profits Start-->
             <div class="container-fluid pt-4 px-4">
-                <div class="h-100 bg-light rounded p-4">
-                    <div class="d-flex align-items-center justify-content-between mb-4"> <h6 class="mb-0">Salse & Revenue</h6>
-                                <a href="">Show All</a>
-                    </div>
-                            <canvas id="worldwide-sales"></canvas>
-                </div>
-            </div>
-                
-            <!-- Sales Chart End -->
-             <!-- Widgets Start -->
-             <div class="container-fluid pt-4 px-4">
-                <div class="h-100 bg-light rounded p-4">
+                <div class="bg-light text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Calender</h6>
+                        <h6 class="mb-0">Vehicle Sales</h6>
                         <a href="">Show All</a>
                     </div>
-                    <div id="calender"></div>
+                    <div class="table-responsive">
+                        <table class="table text-start align-middle table-bordered table-hover mb-0">
+                            <thead>
+                                <tr class="text-dark">
+                                    <th scope="col">Transaction No.</th>
+                                    <th scope="col">Customer Owned Vehicle</th>
+                                    <th scope="col">Estimate Value</th>
+                                    <th scope="col">Exchanged Vehicle</th>
+                                    <th scope="col">Gross Value</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TS-0001</td>
+                                    <td>BMW X3 Sedan 2012</td>
+                                    <td><span class="currsign">7 500 000</td>
+                                    <td>Honda Civic EX TECH 2020</td>
+                                    <td><span class="currsign">15 000 000</td>
+                                    <td><a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>TS-0002</td>
+                                    <td>Toyota Allion G Grade 2010</td>
+                                    <td><span class="currsign">8 000 000</td>
+                                    <td>Toyota Axio WXB 2018</td>
+                                    <td><span class="currsign">11 000 000</td>
+                                    <td><a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>TS-0005</td>
+                                    <td>Suzuki Alto 2010</td>
+                                    <td><span class="currsign"></span>4 000 000</td>
+                                    <td>Suzuki Wagon R Stingray 2018</td>
+                                    <td><span class="currsign">&nbsp;&nbsp;6 500 000</td>
+                                    <td><a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>TS-0006</td>
+                                    <td>Toyota Premio G 2011</td>
+                                    <td><span class="currsign">10 000 000</td>
+                                    <td>Audi A4 S Line 2019</td>
+                                    <td><span class="currsign">20 000 000</td>
+                                    <td><a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>TS-0009</td>
+                                    <td>Lexus NX300 H F Sport</td>
+                                    <td><span class="currsign">16 000 000</td>
+                                    <td>Honda CRV AWD 2018</td>
+                                    <td><span class="currsign">25 000 000</td>
+                                    <td><a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <!-- Widgets End -->
+            <!-- Recent Transactions End -->
+
+           
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-light rounded-top p-4">
@@ -119,8 +162,7 @@
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                             Designed By <a href="#">Team SkyWalkers</a>
-                        </br>
-                       </div>
+                        </div>
                     </div>
                 </div>
             </div>
