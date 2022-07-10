@@ -175,7 +175,7 @@
                             <span class="d-none d-lg-inline-flex">John Doe</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="myprofile.php" class="dropdown-item"><i class="fa fa-id-card">My Profile</a>
+                            <a href="myprofile.php" class="dropdown-item">My Profile</a>
                             <a href="#" class="dropdown-item">Settings</a>
                             <a href="signin.php" class="dropdown-item">Log Out</a>
                         </div>
@@ -191,7 +191,7 @@
                                     <li>
                                         <dl>
                                             <dt>Full Name</dt>
-                                            <dd>SW.Amal Santha Fernando</dd>
+                                            <dd>S.W.Amal Santha Fernando</dd>
                                         </dl>
                                     </li>
                                     <li>
