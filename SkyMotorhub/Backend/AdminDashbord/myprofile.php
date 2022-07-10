@@ -175,7 +175,7 @@
                             <span class="d-none d-lg-inline-flex">John Doe</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="myprofile.php" class="dropdown-item">My Profile</a>
+                            <a href="myprofile.php" class="dropdown-item"><i class="fa fa-id-card">My Profile</a>
                             <a href="#" class="dropdown-item">Settings</a>
                             <a href="signin.php" class="dropdown-item">Log Out</a>
                         </div>
@@ -183,17 +183,50 @@
                 </div>
             </nav>
             <!-- Navbar End -->
-<!-- Sales Chart Start -->
-<div class="container-fluid pt-4 px-4">
-                <div class="h-100 bg-light rounded p-4">
-                    <div class="d-flex align-items-center justify-content-between mb-4"> <h6 class="mb-0">Salse & Revenue</h6>
-                                <a href="">Show All</a>
-                    </div>
-                        <canvas id="worldwide-sales"></canvas>
-                </div>
-            </div>
-                
-    <!-- Sales Chart End -->
+            <!-- my profile Start -->
+            <div class="container-fluid pt-4 px-4">
+                            <div class="h-100 bg-light rounded p-4">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                <ul class="remove">
+                                    <li>
+                                        <dl>
+                                            <dt>Full Name</dt>
+                                            <dd>SW.Amal Santha Fernando</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Email</dt>
+                                            <dd>asdsds@gmail.com</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Contact Number</dt>
+                                            <dd>012345679</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Address</dt>
+                                            <dd>
+                                                <Address>
+                                                132, My Street, Kingston, New York 12401.
+                                                </Address>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <!-- <li>
+                                        <dl>
+                                            <dt> </dt>
+                                            <dd></dd>
+                                        </dl>
+                                    </li> -->
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- my profile End -->
              <!-- Widgets Start -->
              <div class="container-fluid pt-4 px-4">
                 <div class="h-100 bg-light rounded p-4">
