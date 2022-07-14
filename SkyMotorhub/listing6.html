@@ -11,116 +11,27 @@
   <link rel="stylesheet" type="text/css" href="style/slider.css">
   <link rel="stylesheet" type="text/css" href="style/mystyle.css">
   <link rel="stylesheet" type="text/css" href="style/filterstyle.css">
+  <link rel="stylesheet" type="text/css" href="style/slideshow.css">
+  <link href="https://www.patpat.lk/resources/css/style.min.css" rel="stylesheet">
+  <link href="https://www.patpat.lk/resources/css/style-new.css" rel="stylesheet">
+  <link href="https://www.patpat.lk/resources/css/style-essential.css" rel="stylesheet">
+  <link href="https://www.patpat.lk/resources/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+  <link href="https://www.patpat.lk/resources/css/5cr/style_5cr.css" rel="stylesheet">
+  <link href="https://www.patpat.lk/resources/css/newUI/style.newui.css" rel="stylesheet">
+  <link href="https://www.patpat.lk/resources/css/revenue-modal/style.revenue-modal.css" rel="stylesheet">
 
-  <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    img {
-      vertical-align: middle;
-    }
-
-    /* Position the image container (needed to position the left and right arrows) */
-    .container {
-      position: relative;
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-
-    /* Add a pointer when hovering over the thumbnail images */
-    .cursor {
-      cursor: pointer;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 40%;
-      width: auto;
-      padding: 16px;
-      margin-top: -50px;
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-
-    /* Container for image text */
-    .caption-container {
-      text-align: center;
-      background-color: #222;
-      padding: 2px 16px;
-      color: white;
-    }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* Six columns side by side */
-    .column {
-      float: left;
-      width: 16.66%;
-    }
-
-    /* Add a transparency effect for thumnbail images */
-    .demo {
-      opacity: 0.6;
-    }
-
-    .active,
-    .demo:hover {
-      opacity: 1;
-    }
-  </style>
 </head>
 
 <body>
   <!-- Header -->
   <div class="allcontain">
     <div class="header">
-      <ul class="socialicon">
+      <!-- <ul class="socialicon">
         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
         <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-      </ul>
+      </ul> -->
       <ul class="givusacall">
         <li>Give us a call : 0115678963 </li>
       </ul>
@@ -158,13 +69,7 @@
   <!-- content start -->
   <div class="container">
     <div class="row ">
-      <!--<h2 class="item-title col-12 my-2">BMW 5 Series</h2> -->
       <h2 class="item-title col-12 my-2">Honda Civic</h2>
-
-      <!-- shows only property and vehicle category -edited 29-01-2020 -->
-      <p class="intro-line col-12" style="color: rgb(143, 66, 153);">For Sale By Madushan on 2022-07-10, Colombo,
-        Kottawa</p>
-      <!-- end -->
 
       <div class="item-images col-12 col-sm-7">
         <div class="mySlides">
@@ -208,27 +113,27 @@
           <div class="column">
             <img class="demo cursor"
               src="http://patpat-s3-live.s3.amazonaws.com/uploads/937e8b3b69d0dd844153cad63b080f1b-143106.jpeg"
-              style="width:100%" onclick="currentSlide(1)" alt="BMW 5 Series">
+              style="width:100%" onclick="currentSlide(1)" alt="Honda Civic- Front Side View">
           </div>
           <div class="column">
             <img class="demo cursor"
               src="http://patpat-s3-live.s3.amazonaws.com/uploads/e7217d1833fbf18fcaf202d96b022767-148709.jpeg"
-              style="width:100%" onclick="currentSlide(2)" alt="BMW 5 Series">
+              style="width:100%" onclick="currentSlide(2)" alt="Honda Civic- Back Side View">
           </div>
           <div class="column">
             <img class="demo cursor"
               src="http://patpat-s3-live.s3.amazonaws.com/uploads/5e45fab0ca7d9b769608cf0f34ffae96-949068.jpeg"
-              style="width:100%" onclick="currentSlide(3)" alt="BMW 5 Series">
+              style="width:100%" onclick="currentSlide(3)" alt="Honda Civic- Interior View">
           </div>
           <div class="column">
             <img class="demo cursor"
               src="http://patpat-s3-live.s3.amazonaws.com/uploads/b450d30034188289771b25334e90ff9c-213308.jpeg"
-              style="width:100%"" onclick=" currentSlide(4)" alt="BMW 5 Series">
+              style="width:100%"" onclick=" currentSlide(4)" alt="Honda Civic- Interior View">
           </div>
           <div class="column">
             <img class="demo cursor"
               src="http://patpat-s3-live.s3.amazonaws.com/uploads/bacd3b354a033298388ec3e2f80a8756-421680.jpeg"
-              style="width:100%" onclick="currentSlide(5)" alt="BMW 5 Series">
+              style="width:100%" onclick="currentSlide(5)" alt="Honda Civic- Interior View">
           </div>
         </div>
       </div>
@@ -245,7 +150,7 @@
             <h4 class="m-0 row text-left">
               <label class="col-6 col-sm-5 m-0">Best Lease Rental :</label>
               <p class="m-0 col-6 col-sm-7 p-0 m-0">
-                <span class="currency"> : Rs </span><span>240,520</span>
+                <span class="currency">  Rs </span><span>240,520</span>
               </p>
             </h4>
           </div>
@@ -255,7 +160,7 @@
             <h4 class="m-0 row text-left">
               <label class="col-6 col-sm-5 m-0">Down Payment :</label>
               <p class="m-0 col-6 col-sm-7 p-0 m-0">
-                <span class="currency"> : Rs </span><span>5,080,000</span>
+                <span class="currency">  Rs </span><span>5,080,000</span>
               </p>
             </h4>
           </div>
@@ -263,49 +168,49 @@
 
 
 
-          <a class="btn btn-default" href="https://www.patpat.lk/vehicle/financial-request/781778" title="">Quick
+          <a class="btn btn-default w-100" href="https://www.patpat.lk/vehicle/financial-request/781778" title="">Quick
             lease</a>
           <table class="course-info table table-striped">
             <tbody class="border">
 
               <tr>
-                <td class="w-25 clearfix">Ad Reference <span class="dots">:</span></td>
+                <td class="w-25 clearfix">Ad Reference</td>
                 <td class="w-75">W8310071011884202201</td>
               </tr>
               <tr>
-                <td class="w-25 clearfix">Model Year <span class="dots">:</span></td>
+                <td class="w-25 clearfix">Model Year</td>
                 <td class="w-75">2018</td>
               </tr>
               <tr>
-                <td class="w-25 clearfix">Condition <span class="dots">:</span></td>
+                <td class="w-25 clearfix">Condition</td>
                 <td class="w-75">Used</td>
               </tr>
               <tr>
-                <td class="w-25 clearfix">Transmission <span class="dots">:</span></td>
+                <td class="w-25 clearfix">Transmission</td>
                 <td class="w-75">Automatic</td>
               </tr>
               <tr>
-                <td class="w-25 clearfix">Manufacturer <span class="dots">:</span></td>
+                <td class="w-25 clearfix">Manufacturer</td>
                 <td class="w-75">Honda</td>
               </tr>
               <tr>
-                <td class="w-25 clearfix">Model <span class="dots">:</span></td>
+                <td class="w-25 clearfix">Model</td>
                 <td class="w-75">Civic</td>
               </tr>
               <tr>
-                <td class="w-25 clearfix">Fuel Type <span class="dots">:</span></td>
+                <td class="w-25 clearfix">Fuel Type</td>
                 <td class="w-75">Petrol</td>
               </tr>
               <tr>
-                <td class="w-25 clearfix">Engine Capacity <span class="dots">:</span></td>
+                <td class="w-25 clearfix">Engine Capacity</td>
                 <td class="w-75">2000 CC</td>
               </tr>
               <tr>
-                <td class="w-25 clearfix">Mileage <span class="dots">:</span></td>
+                <td class="w-25 clearfix">Mileage</td>
                 <td class="w-75">50000 km</td>
               </tr>
               <tr>
-                <td class="w-25 clearfix">Color <span class="dots">:</span></td>
+                <td class="w-25 clearfix">Color</td>
                 <td class="w-75">White </td>
               </tr>
 
@@ -374,38 +279,10 @@
   <script type="text/javascript" src="source/js/isotope.js"></script>
   <script type="text/javascript" src="source/js/myscript.js"></script>
   <script type="text/javascript" src="source/js/filterscript.js"></script>
+  <script type="text/javascript" src="source/js/slideshow.js"></script>
   <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.1.11.js"></script>
   <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
-  <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("demo");
-      // let captionText = document.getElementById("caption");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      captionText.innerHTML = dots[slideIndex - 1].alt;
-    }
-  </script>
+  
 </body>
 
 </html>
