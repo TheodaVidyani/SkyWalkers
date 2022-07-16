@@ -2062,3 +2062,8 @@ input {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
+h5{
+	width: 100%;
+    font-size: 26px;
+    text-align: center;
+}
