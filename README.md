@@ -1,2 +1,0 @@
-# SkyWalkers
-Team SkyWalkers
