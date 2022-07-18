@@ -1,11 +1,10 @@
-<?php
- ?>
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Vehicle Exchange</title>
+    <title>Vehicle Display</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -64,20 +63,20 @@
                 <div class="navbar-nav w-100">
                     <a href="index.php" class="nav-item nav-link"><i class="fas fa-home"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-car"></i>Vehicle Management</a>
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="fas fa-car"></i>Vehicle Management</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="inquiries.php" class="dropdown-item">Vehicle Inquiries </a>
                             <a href="sales.php" class="dropdown-item">Vehicle Sales </a>
                             <a href="vehicle display.php" class="dropdown-item">Vehicle Display </a>
                         </div>
                     </div>
-                    <a href="exchange.php" class="nav-item nav-link active"><i class="fa fa-handshake"></i>Vehicle Exchange</a>
+                    <a href="exchange.php" class="nav-item nav-link"><i class="fa fa-handshake"></i>Vehicle Exchange</a>
                     <a href="maintain.php" class="nav-item nav-link"><i class="fa fa-wrench"></i>Vehicle Maintenance</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-users"></i>Staff Management</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="payment.php" class="dropdown-item"> Salaries </a>
-                            <a href="roster.php" class="dropdown-item"> Rosters </a>
+                            <a href="payment.php" class="dropdown-item"> Payments </a>
+                            <a href="roster.php" class="dropdown-item"> Roster </a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -87,10 +86,12 @@
                             <a href="#" class="dropdown-item">Statement Of Financial Position</a>
                             <a href="#" class="dropdown-item">Cash Flow Statement</a>
                         </div>
-                    </div></div>
+                    </div>
+                </div>
             </nav>
         </div>
         <!-- Sidebar End -->
+
 
         <!-- Content Start -->
         <div class="content">
@@ -184,220 +185,145 @@
             </nav>
             <!-- Navbar End -->
 
-            <!--Recent Transactions Start-->
+
+          
+
+
+            <!-- Vehicle display Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-light text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Recent Transactions</h6>
+                        <h6 class="mb-0">Vehicle Display</h6>
                         <a href="">Show All</a>
                     </div>
                     <div class="table-responsive">
                         <table class="table text-start align-middle table-bordered table-hover mb-0">
                             <thead>
                                 <tr class="text-dark">
+                                    <th scope="col">#</th>
                                     <th scope="col">Date</th>
-                                    <th scope="col">Transaction No.</th>
-                                    <th scope="col">Customer Name</th>
-                                    <th scope="col">Contact Number</th>
-                                    <th scope="col">Status</th>
+                                    <th scope="col">Registration number</th>
+                                    <th scope="col">Engine number</th>
+                                    <th scope="col">Chassis number</th>
+                                    <th scope="col">Previous owner</th>
                                     <th scope="col">Action</th>
+                                    <!-- <th scope="col">photos </th> -->
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>01 Jan 2045</td>
-                                    <td>TS-0001</td>
-                                    <td>Jhon Doe</td>
-                                    <td class="tp-countrycode">761234567</td>
-                                    <td class="approved">Approved</td>
-                                    <td><a class="fas fa-info-circle"style="font-size:19px"href="#"></a>&nbsp;|&nbsp<a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td></td>
+                                    <th scope="row">1</th>
+                                    <td>02 Jan 2022</td>
+                                    <td>KA-5566</td>
+                                    <td>445522as5525</td>
+                                    <td>SV30-0169266</td>
+                                    <td>John</td>
+                                    <td><button type="button" class="btn btn-outline-primary">✓</button>
+                                    <button type="button" class="btn btn-outline-primary">X</button>
+                                    <button type="button" class="btn btn-outline-primary">Details</button></td>              
                                 </tr>
                                 <tr>
-                                    <td>02 Jan 2045</td>
-                                    <td>TS-0002</td>
-                                    <td>Jhon Doe</td>
-                                    <td class="tp-countrycode">761234567</td>
-                                    <td class="approved">Approved</td>
-                                    <td><a class="fas fa-info-circle"style="font-size:19px"href="#"></a>&nbsp;|&nbsp<a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td></td>
+                                    <th scope="row">2</th>
+                                    <td>05 Jan 2022</td>
+                                    <td>DB-5006</td>
+                                    <td>d56sd1fg3ds2</td>
+                                    <td>AV30-0163966</td>
+                                    <td>Jonny</td>
+                                    <td><button type="button" class="btn btn-outline-primary">✓</button>
+                                    <button type="button" class="btn btn-outline-primary">X</button>
+                                    <button type="button" class="btn btn-outline-primary">Details</button></td>              
                                 </tr>
                                 <tr>
-                                    <td>03 Jan 2045</td>
-                                    <td>TS-0003</td>
-                                    <td>Jhon Doe</td>
-                                    <td class="tp-countrycode">761234567</td>
-                                    <td class="rejected">Rejected</td>
-                                    <td><a class="fas fa-info-circle"style="font-size:19px"href="#"></a>&nbsp;|&nbsp<a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td></td>
+                                    <th scope="row">3</th>
+                                    <td>08 Jan 2022</td>
+                                    <td>XY-3266</td>
+                                    <td>3th5g23d2hsd</td>
+                                    <td>AD50-2369266</td>
+                                    <td>Jimmy</td>
+                                    <td><button type="button" class="btn btn-outline-primary">✓</button>
+                                    <button type="button" class="btn btn-outline-primary">X</button>
+                                    <button type="button" class="btn btn-outline-primary">Details</button></td>              
                                 </tr>
                                 <tr>
-                                    <td>04 Jan 2045</td>
-                                    <td>TS-0004</td>
-                                    <td>Jhon Doe</td>
-                                    <td class="tp-countrycode">761234567</td>
-                                    <td class="pending">Pending</td>
-                                    <td><a class="fas fa-info-circle"style="font-size:19px"href="#"></a>&nbsp;|&nbsp<a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td></td>
+                                    <th scope="row">4</th>
+                                    <td>10 Jan 2022</td>
+                                    <td>CAT-7586</td>
+                                    <td>assfdg542sdf652</td>
+                                    <td>AN70-0169278</td>
+                                    <td>Peter</td>
+                                    <td><button type="button" class="btn btn-outline-primary">✓</button>
+                                    <button type="button" class="btn btn-outline-primary">X</button>
+                                    <button type="button" class="btn btn-outline-primary">Details</button></td>              
                                 </tr>
                                 <tr>
-                                    <td>05 Jan 2045</td>
-                                    <td>TS-0005</td>
-                                    <td>Jhon Doe</td>
-                                    <td class="tp-countrycode">761234567</td>
-                                    <td class="approved">Approved</td>
-                                    <td><a class="fas fa-info-circle"style="font-size:19px"href="#"></a>&nbsp;|&nbsp<a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td></td>
-                                </tr>
+                                    <th scope="row">5</th>
+                                    <td>13 Jan 2022</td>
+                                    <td>CAZ-4563</td>
+                                    <td>65sdf2g6sd4f</td>
+                                    <td>NL90-0181266</td>
+                                    <td>Sam</td>
+                                    <td><button type="button" class="btn btn-outline-primary">✓</button>
+                                    <button type="button" class="btn btn-outline-primary">X</button>
+                                    <button type="button" class="btn btn-outline-primary">Details</button></td>                                            </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>15 Jan 2022</td>
+                                    <td>BL-1561</td>
+                                    <td>65sdf2g6sd4f</td>
+                                    <td>KA02-0169297</td>
+                                    <td>Tim</td>
+                                    <td><button type="button" class="btn btn-outline-primary">✓</button>
+                                    <button type="button" class="btn btn-outline-primary">X</button>
+                                    <button type="button" class="btn btn-outline-primary">Details</button></td>                                            </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>18 Jan 2022</td>
+                                    <td>CDM-1523</td>
+                                    <td>65sdf2g6sd4f</td>
+                                    <td>SA40-0154066</td>
+                                    <td>Kim</td>
+                                    <td><button type="button" class="btn btn-outline-primary">✓</button>
+                                    <button type="button" class="btn btn-outline-primary">X</button>
+                                    <button type="button" class="btn btn-outline-primary">Details</button></td>                                             </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>20 Jan 2022</td>
+                                    <td>AXZ-2573</td>
+                                    <td>65sdf2g6sd4f</td>
+                                    <td>YA80-0168066</td>
+                                    <td>Bill</td>
+                                    <td><button type="button" class="btn btn-outline-primary">✓</button>
+                                    <button type="button" class="btn btn-outline-primary">X</button>
+                                    <button type="button" class="btn btn-outline-primary">Details</button></td>                                           </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>22 Jan 2022</td>
+                                    <td>BAZ-4503</td>
+                                    <td>65sdf2g6sd4f</td>
+                                    <td>XA60-0166066</td>
+                                    <td>Amber</td>
+                                    <td><button type="button" class="btn btn-outline-primary">✓</button>
+                                    <button type="button" class="btn btn-outline-primary">X</button>
+                                    <button type="button" class="btn btn-outline-primary">Details</button></td>                                           </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>08 Feb 2022</td>
+                                    <td>BAA-9503</td>
+                                    <td>65sdf2g6sd4f</td>
+                                    <td>FA09-0109266</td>
+                                    <td>Jane</td>
+                                    <td><button type="button" class="btn btn-outline-primary">✓</button>
+                                    <button type="button" class="btn btn-outline-primary">X</button>
+                                    <button type="button" class="btn btn-outline-primary">Details</button></td>                                </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <!-- Recent Transactions End -->
-            
-            <!--Profits Start-->
-            <div class="container-fluid pt-4 px-4">
-                <div class="bg-light text-center rounded p-4">
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Vehicle Values</h6>
-                        <a href="">Show All</a>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table text-start align-middle table-bordered table-hover mb-0">
-                            <thead>
-                                <tr class="text-dark">
-                                    <th scope="col">Transaction No.</th>
-                                    <th scope="col">Customer Owned Vehicle</th>
-                                    <th scope="col">Estimate Value</th>
-                                    <th scope="col">Exchanged Vehicle</th>
-                                    <th scope="col">Gross Value</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>TS-0001</td>
-                                    <td>BMW X3 Sedan 2012</td>
-                                    <td><span class="currsign">7 500 000</td>
-                                    <td>Honda Civic EX TECH 2020</td>
-                                    <td><span class="currsign">15 000 000</td>
-                                    <td><a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>TS-0002</td>
-                                    <td>Toyota Allion G Grade 2010</td>
-                                    <td><span class="currsign">8 000 000</td>
-                                    <td>Toyota Axio WXB 2018</td>
-                                    <td><span class="currsign">11 000 000</td>
-                                    <td><a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>TS-0005</td>
-                                    <td>Suzuki Alto 2010</td>
-                                    <td><span class="currsign"></span>4 000 000</td>
-                                    <td>Suzuki Wagon R Stingray 2018</td>
-                                    <td><span class="currsign">&nbsp;&nbsp;6 500 000</td>
-                                    <td><a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>TS-0006</td>
-                                    <td>Toyota Premio G 2011</td>
-                                    <td><span class="currsign">10 000 000</td>
-                                    <td>Audi A4 S Line 2019</td>
-                                    <td><span class="currsign">20 000 000</td>
-                                    <td><a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td>
-                                </tr>
-                                <tr>
-                                    <td>TS-0009</td>
-                                    <td>Lexus NX300 H F Sport</td>
-                                    <td><span class="currsign">16 000 000</td>
-                                    <td>Honda CRV AWD 2018</td>
-                                    <td><span class="currsign">25 000 000</td>
-                                    <td><a class="fas fa-pen" href="#"></a>&nbsp;|&nbsp;<a class="fas fa-trash" href="#"></a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <!-- Recent Transactions End -->
+            <!-- Vehicle display Sales End -->
 
-            <!-- Expense Table Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light text-center rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Profits</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table text-start align-middle table-bordered table-hover mb-0">
-                                    <tbody>
-                                        <tr>
-                                            <th scope="col">Transaction No.</th>
-                                            <th scope="col">Net Profit</th>
-                                        <tr>
-                                            <td>TS-0001</td>
-                                            <td class="currsign">1 500 000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>TS-0002</td>
-                                            <td class="currsign">1 100 000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>TS-0005</td>
-                                            <td class="currsign">&nbsp;&nbsp;&nbsp;650 000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>TS-0006</td>
-                                            <td class="currsign">2 000 000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>TS-0009</td>
-                                            <td class="currsign">2 500 000</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Expense Table -->
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light text-center rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Monthly Expenses</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table text-start align-middle table-bordered table-hover mb-0">
-                                    <tbody>
-                                        <tr>
-                                            <td>Advertising Expenses</td>
-                                            <td class="currsign">300 000</td>
-                                        <tr>
-                                            <td>Maintenance Expenses</td>
-                                            <td class="currsign">150 000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Documentary Fee</td>
-                                            <td class="currsign">&nbsp;&nbsp;&nbsp;90 000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>N/A</td>
-                                        </tr>
-                                        <tr>
-                                            <td>N/A</td>
-                                        </tr>
-                                        <tr>
-                                            <td>N/A</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Expense Table End -->
+
 
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">
@@ -408,7 +334,7 @@
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                             Designed By <a href="#">Team SkyWalkers</a>
-                        </div>
+                        </div></div>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,7 @@
-<?php ?>
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +11,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+    <link rel="shortcut icon" type="x-icone" href="image/logo.png">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -51,6 +55,7 @@
                     <div class="text-center mb-0">
                         <h3>Sign In</h3>
                         </div>
+                        <form action="verifyadmin.php" method="post">
                         <div class="form-floating mb-3">
                             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                             <label for="floatingInput">Email address</label>
@@ -66,7 +71,7 @@
                             </div>
                             <a href="">Forgot Password</a>
                         </div>
-                        <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign In</button>
+                        <input type="submit" name="login" id="login" value="Login" class="btn btn-primary py-3 w-100 mb-4">Sign In</input>
                       </div>
                 </div>
             </div>
