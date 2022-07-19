@@ -65,7 +65,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-car"></i>Vehicle Management</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="inquiries.php" class="dropdown-item">Vehicle Inquiries </a>
-                            <a href="sales.php" class="dropdown-item">Vehicle Sales </a>
+                            <a href="vehicle sale.php" class="dropdown-item">Vehicle Sales </a>
                             <a href="vehicle display.php" class="dropdown-item">Vehicle Display </a>
                         </div>
                     </div>
