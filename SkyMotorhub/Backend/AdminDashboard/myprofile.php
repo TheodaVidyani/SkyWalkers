@@ -6,8 +6,6 @@
     <meta charset="utf-8">
     <title>My profile</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
     <link rel="shortcut icon" type="x-icone" href="image/logo.png">
 
     <!-- Favicon -->
@@ -66,7 +64,7 @@
                         <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown"><i class="fas fa-car"></i>Vehicle Management</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="inquiries.php" class="dropdown-item">Vehicle Inquiries </a>
-                            <a href="sales.php" class="dropdown-item">Vehicle Sales </a>
+                            <a href="vehicle sale.php" class="dropdown-item">Vehicle Sales </a>
                             <a href="vehicle display.php" class="dropdown-item">Vehicle Display </a>
                         </div>
                     </div>
