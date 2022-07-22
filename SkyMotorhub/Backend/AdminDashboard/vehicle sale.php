@@ -66,7 +66,7 @@
                         <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="fas fa-car"></i>Vehicle Management</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="inquiries.php" class="dropdown-item">Vehicle Inquiries </a>
-                            <a href="sales.php" class="dropdown-item">Vehicle Sales </a>
+                            <a href="vehicle sales.php" class="dropdown-item">Vehicle Sales </a>
                             <a href="vehicle display.php" class="dropdown-item">Vehicle Display </a>
                         </div>
                     </div>
@@ -193,7 +193,7 @@
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-light text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Vehicle Display</h6>
+                        <h6 class="mb-0">Vehicle Sale</h6>
                         <a href="">Show All</a>
                     </div>
                     <div class="table-responsive">
