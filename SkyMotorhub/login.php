@@ -1,3 +1,6 @@
+<?php require_once('conn.php');?>
+
+
 <!doctype html>
 <html>
 <head>
@@ -55,19 +58,20 @@
 <!--_______________________________________ Login __________________________________ -->
 	<br>
 	<br>
+	<form action="verifyUser.php" method="post">
 		<div class="cont">
 			<div class="form sign-in">
 				<h2>Welcome</h2>
 				<label>
-					<span>Email</span>
-					<input type="email" />
+					<span>User Name</span>
+					<input type="text" name="username"/>
 				</label>
 				<label>
 					<span>Password</span>
-					<input type="password" />
+					<input type="password" name="password" />
 				</label>
 				<p class="forgot-pass">Forgot password?</p>
-				<button type="button" class="submit">Sign In</button>
+				<button type="submit" value="submit" class="submit">Sign In</button>
 			 
 			</div>
 			<div class="sub-cont">
@@ -80,35 +84,37 @@
 					
 						<h3>If you already has an account, just sign in.<h3>
 					</div>
+					
 					<div class="img__btn">
 						<span class="m--up">Sign Up</span>
 						<span class="m--in">Sign In</span>
 					</div>
 				</div>
+				
 				<div class="form sign-up">
 					<h2>Create your Account</h2>
 					<label>
 						<span>Name</span>
-						<input type="text" />
+						<input type="text" placeholder="Enter your Name" name="name" id="name" required />
 					</label>
 					<label>
 						<span>Email</span>
-						<input type="email" />
+						<input type="email" placeholder="Enter your Email" name="email" id="email" required />
 					</label>
 					<label>
 						<span>Password</span>
-						<input type="password" />
+						<input type="password" placeholder="Enter your Password" name="password" id="password" required />
 					</label>
 					<label>
 						<span>Confirm Password</span>
-						<input type="password" />
+						<input type="password" placeholder="Re-enter your Password" name="cpassword" id="cpassword" required  />
 					</label>
-					<button type="button" class="submit">Sign Up</button>
+					<button type="submit" value="submit" class="submit">Sign Up</button>
 					
 				</div>
 			</div>
 		</div>
-	
+	</form>
 		<script>
 			document.querySelector('.img__btn').addEventListener('click', function() {
 				document.querySelector('.cont').classList.toggle('s--signup');
@@ -153,3 +159,4 @@
 <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
 </body>
 </html>
+<?php mysqli_close($connection); ?>
