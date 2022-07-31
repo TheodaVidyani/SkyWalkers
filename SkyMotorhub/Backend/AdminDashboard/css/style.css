@@ -277,24 +277,25 @@
 }
 
 /*** Table Currency Type ***/
-.currsign:before {content:'Rs.';
-    padding-right:10px;
+.currsign:before {
+    content: 'Rs.';
+    padding-right: 10px;
 }
 
 /*** Table Data Color ***/
 td.approved {
-    color:#0a8f51
+    color: #0a8f51
 }
 
 td.pending {
-    color:#ff9100
+    color: #ff9100
 }
 
 td.rejected {
-    color:#ff0000
+    color: #ff0000
 }
 
 /*** Table TP-Countrycode ***/
-.tp-countrycode:before {content:'+94 - ';
+.tp-countrycode:before {
+    content: '+94 - ';
 }
-
