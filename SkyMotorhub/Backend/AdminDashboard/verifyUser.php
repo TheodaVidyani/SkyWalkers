@@ -39,7 +39,7 @@ if(isset($_POST["submit"])){
         header("location: index.php");
     }
     else{
-        header("location: login.php");
+        header("location: login.html");
     }
 }else{
      header("location: 404.php");
