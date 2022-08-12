@@ -32,22 +32,20 @@ if(isset(['username']))
 
 <?php 
 
-$user_ID = $_POST["name"];
-$username = $_POST["email"];
+$username = $_POST["username"];
 $password = $_POST["password"];
-$confirm_password = $_POST["cpassword"];
 
 $hashed_password = shal1($password);
 
-$query = "INSERT INTO login (user_ID, Username, Password, Confirm_password, is_deleted) VALUES('{$user_ID}', '{$username}','{$password}','{$confirm_password}', {$is_deleted})";
-
-$result = mysqli_query($connection, $query);
-
-if ($result) {
-	echo "1 Record added";
-}
-else{
-	echo "Database query failed";
-}
+$sql="select*from skymotorhub where user='".$uname."' AND pass '".$password."' limit 1 ";
+    $result=mysql_query($sql);
+    if(mysql_num_rows($result)==1){
+        echo"You have successfully logged in";
+        exit();
+    }
+    else{
+        echo"You have entered incorrect password";
+        exit();
+    }
 
 ?>

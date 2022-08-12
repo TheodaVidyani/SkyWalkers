@@ -1,15 +1,33 @@
 <?php
 
-$connection = mysqli_connect("localhost","root", "", "skymotorhub") or die("ERROR");
+$username = $_POST['username']
+$password = $_POST['password']
 
-if(mysqli_connect_errno()) {
-    die('Database Connection Failed' . mysqli_connect_error());
+$conn = new mysqli("localhost","root", "", "skymotorhub")
+if($conn->connect_error){
+    die("Failed to connect : "($conn->connect_error));
 }
-else {
-    echo"Connection Successful." ;
-}
+    else{
+        $stmt = $conn-> prepare("SELECT * FROM login WHERE username = ?");
+        $stmt->blind_param("s",$username);
+        $stmt->execute();
+        $stmt result = $stmt->get_result();
+        if($stmt_result->num_rows >0 ) {
+            $data = $stmt_result->fetch_assoc();
+            if($data['password'] === $password){
+                echo"<h2> Login Successfully</h2>";
 
+            }
+            else{
+                echo "<h2> Invalid Username or Password </h2>";
+            }
 
+        }
+        else {
+            echo "<h2> Invalid Username or Password </h2>";
+        }
+
+  }
 
 ?>
 

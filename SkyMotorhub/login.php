@@ -1,4 +1,6 @@
-<?php require_once('conn.php');?>
+<?php
+
+?>
 
 
 <!doctype html>
@@ -58,17 +60,17 @@
 <!--_______________________________________ Login __________________________________ -->
 	<br>
 	<br>
-	<form action="verifyUser.php" method="post">
+	<form action="conn.php" method="post">
 		<div class="cont">
 			<div class="form sign-in">
 				<h2>Welcome</h2>
 				<label>
-					<span>User Name</span>
-					<input type="text" name="username"/>
+					<span>Username</span>
+					<input type="text" name="username" id="username" placeholder="Enter your Username"/>
 				</label>
 				<label>
 					<span>Password</span>
-					<input type="password" name="password" />
+					<input type="password" name="password" id="password" placeholder="Enter your Password"/>
 				</label>
 				<p class="forgot-pass">Forgot password?</p>
 				<button type="submit" value="submit" class="submit">Sign In</button>
@@ -92,6 +94,7 @@
 				</div>
 				
 				<div class="form sign-up">
+				
 					<h2>Create your Account</h2>
 					<label>
 						<span>Name</span>
@@ -159,4 +162,3 @@
 <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
 </body>
 </html>
-<?php mysqli_close($connection); ?>
