@@ -28,12 +28,9 @@ if(isset($_POST["submit"])){
     // this is the first step to connect to a mysql database 
     $link = mysqli_connect("localhost", "root","1998", "mydb");
 
-    var_dump($link);
     $u = $_POST["username"];
     $p = md5($_POST["password"]);
 
-    var_dump($u);
-    var_dump($p);
     $r = mysqli_query($link, "SELECT * FROM user WHERE u_name='$u' AND password='$p'");
 
     if($r->num_rows){
@@ -41,11 +38,11 @@ if(isset($_POST["submit"])){
         $_SESSION["currentUser"] =  $u ;
         header("location: index.php");
     }
-//     else{
-//         header("location: http://localhost:8888/mositha/project2/23-07-2022/views/invalidpage.php");
-//     }
-// }else{
-//      header("location: http://localhost:8888/mositha/project2/23-07-2022/views/error.php");
+    else{
+        header("location: login.html");
+    }
+}else{
+     header("location: 404.php");
  }
 
 ?>

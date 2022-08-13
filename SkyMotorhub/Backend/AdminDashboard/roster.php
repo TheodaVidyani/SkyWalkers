@@ -216,15 +216,6 @@
                                     <td>Kamal</td>
                                     <td>Closed</td>
                                 </tr>
-                                <tr>
-                                    <td>Amal</td>
-                                    <td>Kamal</td>
-                                    <td>Amal</td>
-                                    <td>Kamal</td>
-                                    <td>Amal</td>
-                                    <td>Kamal</td>
-                                    <td>Closed</td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
