@@ -1,4 +1,6 @@
-<?php  ?>
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -193,72 +195,28 @@
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First Name</th>
-                            <th scope="col">Last Name</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
                             <th scope="col">Email</th>
                             <th scope="col">Subject</th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <?php
+                    while($rows=mysql_fetch_assoc($result))
+                    {
+                    ?>
+
                         <tr>
-                            <th scope="row">1</th>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td>jhon@email.com</td>
-                            <td>Vehicle Repair inquiry</td>
-                            <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                            <td> <?php echo $rows.['contactus_ID'] ?></td>
+                            <td> <?php echo $rows.['Name'] ?></td>
+                            <td> <?php echo $rows.['Email'] ?></td>
+                            <td> <?php echo $rows.['Message'] ?></td>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>mark@email.com</td>
-                            <td>Vehicle Exchange Inquiry</td>
-                            <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>jacob@email.com</td>
-                            <td>Vehicle Spare parts inquiry</td>
-                            <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Jason</td>
-                            <td>Thorn</td>
-                            <td>cob@email.com</td>
-                            <td>Vehicle Repair inquiry</td>
-                            <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Cob</td>
-                            <td>Norton</td>
-                            <td>ben@email.com</td>
-                            <td>Vehicle Spare parts inquiry</td>
-                            <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>Jacob</td>
-                            <td>Ronton</td>
-                            <td>rucob@email.com</td>
-                            <td>Vehicle Exchange Inquiry</td>
-                            <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">7</th>
-                            <td>Sob</td>
-                            <td>Thornton</td>
-                            <td>sob@email.com</td>
-                            <td>Vehicle Spare parts inquiry</td>
-                            <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                        </tr>
-                    </tbody>
+                    <?php
+                    }
+                    ?>
+                    
                 </table>
             </div>
            
